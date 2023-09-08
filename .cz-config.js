@@ -58,7 +58,8 @@ module.exports = {
     { name: "interactive-map" },
     { name: "shared" },
   ],
- // allowCustomScopes: true, // 允许输入自定义 Scope 信息
+  allowedCustomScopes:false, 
+  SkipQuestions: ["body", "footer"],
   allowBreakingChanges: [":sparkles: feat", ":bug: fix"], // 允许添加 Breaking Change 的操作
   subjectLimit: 100, // body 主题字数限制
 };
