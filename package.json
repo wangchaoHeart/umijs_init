@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/wangchaoHeart/umijs_init#readme",
   "devDependencies": {
+    "@commitlint/cli": "^17.7.1",
     "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
     "cz-customizable": "^7.0.0"
   },
   "config": {
