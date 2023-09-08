@@ -4,7 +4,8 @@
   "description": "测试",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,7 +21,8 @@
     "@commitlint/cli": "^17.7.1",
     "commitizen": "^4.3.0",
     "commitlint-config-cz": "^0.13.3",
-    "cz-customizable": "^7.0.0"
+    "cz-customizable": "^7.0.0",
+    "husky": "^8.0.3"
   },
   "config": {
     "commitizen": {
