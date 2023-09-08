@@ -45,9 +45,9 @@ module.exports = {
     type: "请选择提交的类型(必填)：",
     scope: "请选择此更改的范围(必填)：",
     subject: "请简要描述提交(必填)：",
-    body: "请输入详细描述(可选)：",
+/*  body: "请输入详细描述(可选)：", 
     breaking: "列举破坏性修改(可选)：",
-    footer: "请输入要关闭的 issue(可选)：",
+    footer: "请输入要关闭的 issue(可选)：", */
     confirmCommit: "确认要使用以上信息提交？(y/n)：",   
   },
   // 你可以在这里预定义 Scope
@@ -59,7 +59,7 @@ module.exports = {
     { name: "shared" },
   ],
   allowedCustomScopes:false, 
-  SkipQuestions: ["body", "footer"],
+  skipQuestions: ["body", "footer", "breaking"],
   allowBreakingChanges: [":sparkles: feat", ":bug: fix"], // 允许添加 Breaking Change 的操作
   subjectLimit: 100, // body 主题字数限制
 };
