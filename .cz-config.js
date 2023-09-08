@@ -42,14 +42,13 @@ module.exports = {
     },
   ],
   messages: {
-    type: "请选择提交的类型：",
-    scope: "请选择此更改的范围(可选)：",
-    customScope: "请输入修改的范围(可选)：",
+    type: "请选择提交的类型(必填)：",
+    scope: "请选择此更改的范围(必填)：",
     subject: "请简要描述提交(必填)：",
     body: "请输入详细描述(可选)：",
     breaking: "列举破坏性修改(可选)：",
     footer: "请输入要关闭的 issue(可选)：",
-    confirmCommit: "确认要使用以上信息提交？(y/n)：",
+    confirmCommit: "确认要使用以上信息提交？(y/n)：",   
   },
   // 你可以在这里预定义 Scope
   scopes: [
@@ -59,8 +58,7 @@ module.exports = {
     { name: "interactive-map" },
     { name: "shared" },
   ],
-  SkipQuestions:true,
-  allowCustomScopes: true, // 允许输入自定义 Scope 信息
+ // allowCustomScopes: true, // 允许输入自定义 Scope 信息
   allowBreakingChanges: [":sparkles: feat", ":bug: fix"], // 允许添加 Breaking Change 的操作
   subjectLimit: 100, // body 主题字数限制
 };
