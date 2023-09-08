@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/wangchaoHeart/umijs_init#readme",
   "devDependencies": {
-    "commitizen": "^4.3.0"
+    "commitizen": "^4.3.0",
+    "cz-customizable": "^7.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    }
   }
 }
